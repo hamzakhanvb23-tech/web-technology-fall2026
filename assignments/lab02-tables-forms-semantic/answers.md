@@ -13,3 +13,4 @@ Q3. What is the difference between <th> and <td>? Why should a table never be us
 Answer:
 The th tag defines a table header cell which automatically makes the text bold and centered to act as a column title, while the td tag defines a standard table data cell for regular values. Tables should never be used to create the layout of a whole web page because it ruins semantic accessibility for screen readers and makes the layout extremely difficult to scale or make responsive on smaller mobile screens.
 
+ 
