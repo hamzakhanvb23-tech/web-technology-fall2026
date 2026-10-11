@@ -1,16 +1,11 @@
-Q1. In your form, why must a <label>'s for match its <input>'s id? What goes wrong if they don't match?
+### Q1. In your form, why must a `<label>`'s `for` match its `<input>`'s `id`? What goes wrong if they don't match?
 
-Answer:
-Matching the label's for attribute with the input's id creates a direct connection between the text and the input field. This is important for web accessibility because it allows screen readers to correctly read out the label text when a user selects that field. If they do not match, clicking on the label will not focus or activate the input element, which completely breaks the user experience for mouse and touch users.
+Answer= The `for` attribute in a `<label>` must match the `id` of its `<input>` so the browser knows which input the label belongs to. If they don't match, clicking the label may not focus the correct input, making the form harder to use, especially for people who use assistive technology.
 
-Q2. You used both <section> and <article>. What is the difference? Why did the hackathon story become an <article>?
+### Q2. You used both `<section>` and `<article>`. What is the difference? Why did the hackathon story become an `<article>`?
+Answer= A `<section>` groups related content together under a common topic, while an `<article>` contains independent content that can stand on its own. The hackathon story became an `<article>` because it is a complete piece of content that could be shared or read separately from the rest of the page.
 
-Answer:
-A section tag is used as a generic container to group together related content or thematic parts on a web page. On the other hand, an article tag is specifically meant for completely independent and self-contained content that can stand alone. The hackathon story became an article because it represents a single, complete piece of narrative text or news that makes sense on its own even if it is separated from the rest of the site.
+### Q3. What is the difference between `<th>` and `<td>`? Why should a table never be used to lay out a whole page?
 
-Q3. What is the difference between <th> and <td>? Why should a table never be used to lay out a whole page?
+Answer= The `<th>` element defines a header cell in a table, while the `<td>` element defines a regular data cell. Tables should not be used to lay out a whole page because they are meant to display tabular data, and using them for page layouts makes the HTML harder to maintain and less accessible.
 
-Answer:
-The th tag defines a table header cell which automatically makes the text bold and centered to act as a column title, while the td tag defines a standard table data cell for regular values. Tables should never be used to create the layout of a whole web page because it ruins semantic accessibility for screen readers and makes the layout extremely difficult to scale or make responsive on smaller mobile screens.
-
- 
